@@ -1,0 +1,45 @@
+:root {
+    --title-font: helvetica;
+    --color-one: blue;
+    --color-two: lightblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: antiquewhite;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-title {
+    display: flex;
+    color: var(--color-one);
+    padding: 10px 20px 10px 20px;
+    font-size: 60px;
+    font-style: italic;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li a {
+    display: flex;
+    padding: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--color-two);
+    align-items: center;
+}
