@@ -1,45 +1,37 @@
 :root {
-    --title-font: helvetica;
-    --color-one: blue;
-    --color-two: lightblue;
+    /* colors */
+    --green: #00897B;
+    --pink-light: #FFECE6;
+    --pink-dark: #FFCCBB;
+    --blue-light: #D2E2FB;
+    --blue-dark: #78A5f5;
+    --gray-light: #F8F8F8;
+    --gray-dark: #707070;
+
+    /* fonts */
+    --logo-font-family: 'Rock Salt', cursive;
+    --p-font-family: 'Roboto Mono', monospace;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.logo {
+    font-family: var(--logo-font-family);
+    color: var(--green);
 }
 
-header {
-    background-color: antiquewhite;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
+.nav {
+    background-color: var(--gray-light);
 }
 
-.site-title {
-    display: flex;
-    color: var(--color-one);
-    padding: 10px 20px 10px 20px;
-    font-size: 60px;
-    font-style: italic;
-    align-items: center;
+.p-font {
+    font-family: var(--p-font-family);
+    color: var(--blue-dark);
 }
 
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
+.section-font {
+    font-family: var(--p-font-family);
+    color: var(--green);
 }
 
-header nav ul li a {
-    display: flex;
-    padding: 30px;
-    font-size: 30px;
-    text-decoration: none;
-    color: var(--color-two);
-    align-items: center;
+.div-bubble {
+    background-color: var(--pink-light);
 }

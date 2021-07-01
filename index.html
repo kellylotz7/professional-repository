@@ -1,29 +1,107 @@
 <!DOCTYPE html>
-<html lang=en>
-    <head>
-        <meta charset="UTF=8" />
-        <link rel="stylesheet" href="./assets/style.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kelly Lotz</title>
-    </head>
+<html lang="en">
+<head>
+     
+     <!--Importing custom fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Rock+Salt&display=swap" rel="stylesheet">
+     <!--Tailwind CDN-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css" integrity="sha512-RntatPOhEcQEA81gC/esYoCkGkL7AYV7TeTPoU+R9zE44/yWxVvLIBfBSaMu78rhoDd73ZeRHXRJN5+aPEK53Q==" crossorigin="anonymous" />
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelly Lotz</title>
+</head>
 <body>
-    <!--Navigation-->
-    <header>
-    <h1 class="site-title">Kelly Lotz</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#resume">Resume</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+<main class="flex-col flex-row">
 
+<!-- Nav -->
+<nav class="nav grid grid-flow-col">
+    <div class="logo text-5xl ml-10 my-10">Kelly Lotz</div>
+    <div class="flex flex-wrap grid-flow-col button my-auto mx-5 p-font">
+        <a href="#projects"  class="py-1 px-4 m-4 bg-blue-400 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-500 focus:outline-none lg:text-2xl">projects</a>
+        <a href="#contact"  class="py-1 px-4 m-4 bg-blue-400 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-500 focus:outline-none lg:text-2xl">contact</a>
+        <a href="https://github.com/kellylotz7" target="_blank" class="py-1 px-4 m-4 bg-blue-400 rounded-lg text-white hover:bg-blue-300 focus:bg-blue-500 focus:outline-none lg:text-2xl">GitHub</a>
+    </div>
+</nav>
 
-</body>
+<!-- Bio -->
+<div class="mt-6 lg:mb-8 grid justify-items-center section-font text-3xl md:text-5xl lg:text-7xl md:mt-12 font-bold">
+    about
+</div>
+<div class="flex justify-center items-center">
+    <div class="p-font div-bubble mb-6 mt-4 w-11/12 lg:w-9/12 grid justify-items-center">
+        <div class="grid grid-flow-col grid-cols-2 flex flex-card border-b-8 border-white">
+            <img src="assets/IMG_3036.jpg" alt="Kelly Lotz" class="h-full w-full">
+            <div class="w-full flex flex-col items-center w-1/2">
+                <p class="flex-2 flex-items-center py-1 px-4 mt-4 text-lg md:text-3xl lg:text-5xl lg:mt-8 rounded-lg bg-blue-200 ">bio</p>
+                <p class="px-4 py-2 md:py-4 md:px-6 md:text-2xl lg:text-4xl lg:py-6 lg:px-8">Kelly is a coding student at the University of Utah. She enjoys problem-solving and creating inviting responsive UI. She currently lives between Boise, Idaho and Salt Lake City, Utah.</p>
+            </div>
+        </div>
+        <div class="w-full flex flex-col items-center w-1/2 border-t-8 border-white">
+            <p class="flex-2 flex-items-center py-1 px-4 mt-4 text-lg md:text-3xl lg:text-5xl lg:mt-8 rounded-lg bg-blue-200 ">skills</p>
+            <p class="px-4 pt-2 pb-4 md:py-4 md:px-6 md:text-2xl lg:text-4xl lg:py-6 lg:px-8">html \ css \ javascript \ jQUERY
+                bootstrap \ tailwind css \ node.js
+                npm \ adobe xD \ express.js \ mySQL
+                sequelize \ insomnia \ handlebars
+                heroku \ git</p>
+    </div>
+    </div>
+</div>
+
+<!-- Featured Projects -->
+<div id="projects" class="mt-4 lg:mb-8 grid justify-items-center section-font text-3xl md:text-5xl lg:text-7xl md:mt-12 font-bold">
+    featured projects
+</div>
+
+<!-- main project -->
+<a href="https://dinner-parties.herokuapp.com/" target="_blank" class="flex justify-center items-center group hover:opacity-70">
+<div class="p-font div-bubble mb-6 mt-4 w-11/12 lg:w-9/12 grid justify-items-center">
+    <div class="grid grid-flow-col grid-cols-2 flex flex-card hover:shadow-lg">
+        <div class="w-full flex flex-col items-center w-1/2">
+            <p class="flex-2 flex-items-center py-1 px-4 mt-4 text-lg md:text-3xl lg:text-5xl lg:mt-8 rounded-lg bg-blue-200 ">dinner party</p>
+            <p class="px-4 py-2 md:py-4 md:px-6 md:text-2xl lg:text-4xl lg:py-6 lg:px-8">Dinner Party is a full-stack web application designed 
+                to allow users to create an account and find forums based off interests specified during their profile creation.
+            </p>
+        </div>
+            <img src="assets/Screen Shot 2021-06-30 at 6.28.06 PM.png" alt="Kelly Lotz" class="h-full w-full">
+    </div>
+</div>
+</a>
+
+<!-- other projects -->
+<a href="https://dinner-parties.herokuapp.com/" target="_blank" class="flex justify-center items-center group hover:opacity-70">
+    <div class="p-font div-bubble mb-6 mt-4 w-11/12 lg:w-9/12 grid justify-items-center">
+        <div class="grid grid-flow-col grid-cols-2 flex flex-card hover:shadow-lg">
+            <div class="w-full flex flex-col items-center w-1/2">
+                <p class="flex-2 flex-items-center py-1 px-4 mt-4 text-lg md:text-3xl lg:text-5xl lg:mt-8 rounded-lg bg-blue-200 ">dinner party</p>
+                <p class="px-4 py-2 md:py-4 md:px-6 md:text-2xl lg:text-4xl lg:py-6 lg:px-8">Dinner Party is a full-stack web application designed 
+                    to allow users to create an account and find forums based off interests specified during their profile creation.
+                </p>
+            </div>
+                <img src="assets/Screen Shot 2021-06-30 at 6.28.06 PM.png" alt="Kelly Lotz" class="h-full w-full">
+        </div>
+    </div>
+    </a>
+
+<!-- contact -->
+<div id="contact" class="mt-4 lg:mb-8 grid justify-items-center section-font text-3xl md:text-5xl lg:text-7xl md:mt-12 font-bold">
+    contact
+</div>
+<div class="flex justify-center items-center">
+    <div class="p-font py-6 md:px-8 md:text-2xl lg:text-4xl div-bubble mb-6 mt-4 w-11/12 lg:w-9/12 grid justify-items-center">
+    email: kellylotz7@gmail.com
+    </div>
+</div>
+<!--Footer-->
+<footer class="footer, p-4">
+   Kelly Lotz 2021 
+  </footer>
+  </main>
+  
+  <!--Scripts-->
+      <link rel="stylesheet" href="assets/style.css"/>
+  </body>
+  </html>
